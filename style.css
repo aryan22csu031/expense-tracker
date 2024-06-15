@@ -10,6 +10,7 @@
 body{
     box-sizing: border-box;
     background-color: #Faf9f6;
+    height: 100vh;
 }
 
 button{
@@ -249,3 +250,85 @@ a:hover{
     background-color: rgb(87, 128, 205);
     transform: translateY(0px);
 } 
+
+.footer{
+    display: flex;
+    position: relative;
+    top: 14rem;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(152, 2, 85);
+}
+
+.footer .end-note{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 12px;
+    margin-top: 1rem;
+}
+
+.footer .end-note h3{
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #Faf9f6;
+    margin-bottom: 9px;
+}
+
+.footer .end-note p{
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.footer .imp-links {
+    display: flex;
+    position: relative;
+    left: 4rem;
+    flex-direction: column;
+    width: 33%;
+    margin: 12px;
+    margin-top: 1rem;
+}
+
+.footer .imp-links h3{
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #Faf9f6;
+    margin-bottom: 9px;
+}
+
+.footer .imp-links ul{
+    list-style: none;
+}
+
+.footer .imp-links ul li{
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0.3rem;   
+}
+
+.footer .contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 12px;
+    margin-top: 1rem;
+}
+
+.footer .contact-us h3{
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #Faf9f6;
+    margin-bottom: 9px;
+}
+
+.footer .contact-us p{
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
