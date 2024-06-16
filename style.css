@@ -68,10 +68,10 @@ a:hover{
 }
 .nav .headline p{
     font-size: 1.4rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
     /* width: 20rem; */
-    color: blue;
+    color: rgb(0, 0, 0);
     text-align: left;
 }
 
@@ -282,7 +282,7 @@ a:hover{
 
 .footer .end-note p{
     font-size: 1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
     text-align: left;
 }
@@ -310,7 +310,7 @@ a:hover{
 
 .footer .imp-links ul li{
     font-size: 1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
     text-align: left;
     margin-bottom: 0.3rem;   
@@ -333,7 +333,7 @@ a:hover{
 
 .footer .contact-us p{
     font-size: 1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
     text-align: left;
 }
