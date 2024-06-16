@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EntryForm - Expense Tracker</title>
+    <link rel="stylesheet" href="analysis-form.css">
+    </head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="headline">
+            <p>
+                Namaste, Hello, Bonjour, Guten Tag !! <br />
+                <span id="title-text">BachatBuddy </span id="title-text"><span class="welcome-effect"></span>
+            </p>
+        </div>
+        <div class="nav-btn">
+            <button id="contact-us">Contact Us</button>
+            <button id="home">Home</button>
+        </div>
+        <div class="account">
+            <img src="images/account.png" alt="profile" id="profile" />
+        </div>
+
+        <div class="log-nav">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Expense Tracker Form</h2>
+        <form id="expenseForm">
+            <div class="form-group">
+                <label for="accountNo">Account No.</label>
+                <input type="text" id="accountNo" name="accountNo" placeholder="account no." required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="transactionDetails">Transaction Details</label>
+                <input type="text" id="transactionDetails" name="transactionDetails" placeholder="enter transaction details" required>
+            </div>
+            <div class="form-group">
+                <label for="chequeNo">Cheque No.</label>
+                <input type="text" id="chequeNo" name="chequeNo" placeholder="enter cheque number" required>
+            </div>
+            <div class="form-group">
+                <label for="valueDate">Value Date</label>
+                <input type="date" id="valueDate" name="valueDate" required>
+            </div>
+            <div class="form-group">
+                <label for="withdrawalAmount">Withdrawal Amount</label>
+                <input type="number" id="withdrawalAmount" name="withdrawalAmount" placeholder="enter withdrawal amount" required>
+            </div>
+            <div class="form-group">
+                <label for="depositAmount">Deposit Amount</label>
+                <input type="number" id="depositAmount" name="depositAmount" placeholder="enter deposit amount" required>
+            </div>
+            <div class="form-group">
+                <label for="balanceAmount">Balance Amount</label>
+                <input type="number" id="balanceAmount" name="balanceAmount" placeholder="enter balance amount" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="analysis-form.js"></script>
+</body>
+</html>
