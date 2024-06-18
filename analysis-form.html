@@ -37,36 +37,52 @@
         <h2>Expense Tracker Form</h2>
         <form id="expenseForm">
             <div class="form-group">
-                <label for="accountNo">Account No.</label>
-                <input type="text" id="accountNo" name="accountNo" placeholder="account no." required>
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" placeholder="enter your full name" required>
             </div>
             <div class="form-group">
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" required>
+                <label for="emailid">Email ID</label>
+                <input type="email" id="emailid" name="emailid" placeholder="example123@gmail.com" required>
             </div>
             <div class="form-group">
-                <label for="transactionDetails">Transaction Details</label>
-                <input type="text" id="transactionDetails" name="transactionDetails" placeholder="enter transaction details" required>
+                <label for="transactionfilename">Transaction File Name</label>
+                <input type="text" id="filename" name="filename" placeholder="filename.csv" required>
             </div>
             <div class="form-group">
-                <label for="chequeNo">Cheque No.</label>
-                <input type="text" id="chequeNo" name="chequeNo" placeholder="enter cheque number" required>
+                <label for="csvFile">Transaction File(csv format only)</label>
+                <input type="file" id="fileInput" name="csvFile" accept=".csv" required>
             </div>
             <div class="form-group">
-                <label for="valueDate">Value Date</label>
-                <input type="date" id="valueDate" name="valueDate" required>
-            </div>
-            <div class="form-group">
-                <label for="withdrawalAmount">Withdrawal Amount</label>
-                <input type="number" id="withdrawalAmount" name="withdrawalAmount" placeholder="enter withdrawal amount" required>
-            </div>
-            <div class="form-group">
-                <label for="depositAmount">Deposit Amount</label>
-                <input type="number" id="depositAmount" name="depositAmount" placeholder="enter deposit amount" required>
-            </div>
-            <div class="form-group">
-                <label for="balanceAmount">Balance Amount</label>
-                <input type="number" id="balanceAmount" name="balanceAmount" placeholder="enter balance amount" required>
+                <h2 class="guidelines_text">*Guidelines for CSV File Input*</h2>
+                <dl class="guidelines_text">
+                <dt>File Format:</dt>
+                <dd>Ensure your file is in CSV format. Only CSV files are accepted.</dd>
+                <dt>Column Names:</dt>
+                <dd>
+                    Your CSV file must contain the following columns with <strong>exact</strong> names:
+                    <ul>
+                        <li><strong>Date:</strong> This column should contain the date of each transaction. Ensure all dates are in a consistent format, such as YYYY-MM-DD.</li>
+                        <li><strong>Category:</strong> This column should describe the type of transaction (e.g., "Groceries", "Salary", "Utilities").</li>
+                            <li><strong>Withdrawal:</strong> This column should contain amounts withdrawn from your account.</li>
+                            <li><strong>Deposit:</strong> This column should contain amounts deposited into your account.</li>
+                        </ul>
+                </dd>
+                <dt>Check for Missing Data:</dt>
+                <dd>Ensure there are no missing values in the required columns.</dd>
+                <dt>Suggestions:</dt>
+                <dd>
+                    <strong>If your file is not in CSV format:</strong>
+                    <br>
+                    Open your file in a spreadsheet application (like Microsoft Excel or Google Sheets).
+                    Save or export the file as a CSV (Comma Separated Values) file.
+                    <br><br>
+                    <strong>If your file does not contain the exact column names:</strong>
+                    <br>
+                    Use the following prompt in ChatGPT to convert your file into the desired format:
+                    <br>
+                    <em>"I have a file containing transaction details. The columns are not named as 'Date', 'Category', 'Withdrawal', and 'Deposit'. Please provide a step-by-step guide on how to rename my columns to these exact names and ensure the data is correctly formatted for upload to Bachat Buddy."</em>
+                </dd>
+                </dl>
             </div>
             <button type="submit">Submit</button>
         </form>

@@ -22,6 +22,7 @@ h2 {
 
 .form-group {
     margin-bottom: 15px;
+    margin-top: 2rem;
 }
 
 label {
@@ -208,4 +209,10 @@ button:hover {
     .log-nav ul {
         flex-direction: column;
     }
+}
+.guidelines_text
+{
+    font-family: 'Helvetica';
+    color: grey;
+    font-size: small;
 }
