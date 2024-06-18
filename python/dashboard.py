@@ -9,7 +9,7 @@ import seaborn as ss
 #loading data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('./data/MyTransaction.csv')
+    df = pd.read_csv('MyTransaction.csv')
     df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
     # Change the date format to 'dd-mm-yy' for display
     df['FormattedDate'] = df['Date'].dt.strftime('%d-%m-%y')
@@ -40,7 +40,7 @@ category = st.sidebar.multiselect('Transaction Category', options=df['Category']
 
 logo_img, heading = st.columns([1,4])
 with logo_img:
-    st.image('./images/bb_logo.png', width=80)
+    st.image('bb_logo.png', width=80)
 with heading:
     st.markdown('# BachatBuddy : Dashboard')
 st.write('Hey there, savvy spender! 🌟'
