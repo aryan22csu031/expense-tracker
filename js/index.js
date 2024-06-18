@@ -16,7 +16,7 @@ profile.addEventListener("mouseleave",()=>{
     logNav.style.display = "none";
 })
 var typed = new Typed(".welcome-effect",{
-    strings:[" welcomes you aboard !!"],
+    strings:[" welcomes you aboard !!", "Hello, visitor", "Explore with us", "Dive right in", "Glad you're here"],
     typeSpeed:90,
     backSpeed:90,
     backDelay:1250,
