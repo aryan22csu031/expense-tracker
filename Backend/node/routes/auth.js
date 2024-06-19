@@ -3,7 +3,8 @@ const router = express.Router();
 
 // Mock user data
 const users = [
-    { email: 'test@example.com', password: '123' }
+    { email: 'test1@example.com', password: '1234'},
+    { email: 'test2@example.com', password: '12345'}
 ];
 
 // Login route
