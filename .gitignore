@@ -1,0 +1,18 @@
+# Node.js dependencies
+backend/node_modules/
+
+# Python dependencies (if any)
+
+# Environment variables
+backend/node/.env
+
+# Log files
+backend/node/logs/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+*.tmp
