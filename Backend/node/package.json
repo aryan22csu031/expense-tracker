@@ -6,6 +6,10 @@
   "scripts": {
     "test": "dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aryan22csu031/expense-tracker.git"
+  },
   "keywords": [
     "BachatBuddy",
     "Expense-tracker",
