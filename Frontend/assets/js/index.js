@@ -24,3 +24,28 @@ var typed = new Typed(".welcome-effect",{
     cursorChar:"!",
     loop:true
 });
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('log-mail').value;
+    const password = document.getElementById('log-pass').value;
+    const errorMessage = document.getElementById('error-message');
+
+    fetch('http://localhost:3000/api/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.message === 'Login successful') {
+        window.location.href = 'analysis-form.html';
+      } else {
+        errorMessage.style.display = 'block';
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  });
