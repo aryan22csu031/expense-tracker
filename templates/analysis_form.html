@@ -9,7 +9,7 @@
 <body>
     <div class="nav">
         <div class="logo">
-            <img src="../images/logo.png" alt="logo" id="logo" />
+            <img src="./images/logo.png" alt="logo" id="logo" />
         </div>
         <div class="headline">
             <p>
@@ -32,7 +32,17 @@
             </ul>
         </div>
     </div>
-
+    <div class="welcome-box">
+        <div class="intro-container">
+            <div class="intro-img">
+                <img src="./images/intro-img.png" alt="">
+            </div>
+            <div class="intro-text">
+                <h1>Meet <span>BachatBuddy</span></h1>
+                <p>Your new best friend in managing money and maximizing savings is here. Our detailed weekly and monthly spending summaries, shown in clear visual formats, will help you understand where your money goes. Let's embark on a journey towards financial freedom together and watch your savings grow!</p>
+            </div>
+          </div>
+    </div>
     <div class="container">
         <h2>Expense Tracker Form</h2>
         <form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
@@ -86,6 +96,30 @@
             </div>
             <button type="submit">Submit</button>
         </form>
+    </div>
+    <div class="footer">
+        <div class="end-note">
+          <h3>BachatBuddy</h3>
+          <p>Your personal assistant for smart spending and saving is here to revolutionize the way you manage your finances. Get ready to gain unprecedented insight into your financial habits with our comprehensive weekly and monthly spending summaries, all presented in visually engaging and easy-to-understand formats. Let's embark on this journey together to make every penny count, helping you achieve your financial goals with confidence and ease. </p>
+        </div>
+        <div class="imp-links">
+          <h3>Important Links</h3>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Our team</li>
+            <li>Our Clients</li>
+          </ul>
+        </div>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>Suite 527 592 Clair Skyway <br>
+              Marksstad, LA <br>
+              51467-0327 <br>
+              New York-11987 <br>
+              <i class="fa-solid fa-phone"></i> : 917-772-50xx</p>
+        </div>
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="../static/analysis_form.js"></script>
