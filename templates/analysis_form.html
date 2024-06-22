@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EntryForm - Expense Tracker</title>
+    <link rel="stylesheet" href="../static/analysis_form.css">
+    </head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="headline">
+            <p>
+                Namaste, Hello, Bonjour, Guten Tag !! <br />
+                <span id="title-text">BachatBuddy </span id="title-text"><span class="welcome-effect"></span>
+            </p>
+        </div>
+        <div class="nav-btn">
+            <button id="contact-us">Contact Us</button>
+            <button id="home">Home</button>
+        </div>
+        <div class="account">
+            <img src="./images/account.png" alt="profile" id="profile" />
+        </div>
+
+        <div class="log-nav">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Expense Tracker Form</h2>
+        <form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" placeholder="enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="emailid">Email ID</label>
+                <input type="email" id="emailid" name="emailid" placeholder="example123@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="transactionfilename">Transaction File Name</label>
+                <input type="text" id="filename" name="filename" placeholder="filename.csv" required>
+            </div>
+            <div class="form-group">
+                <label for="csvFile">Transaction File(csv format only)</label>
+                <input type="file" id="fileInput" name="csvFile" accept=".csv" required>
+            </div>
+            <div class="form-guidelines">
+                <h2 class="guidelines_text">*Guidelines for CSV File Input*</h2>
+                <dl class="guidelines_text">
+                <dt>File Format:</dt>
+                <dd>Ensure your file is in CSV format. Only CSV files are accepted.</dd>
+                <dt>Column Names:</dt>
+                <dd>
+                    Your CSV file must contain the following columns with <strong>exact</strong> names:
+                    <ul>
+                        <li><strong>Date:</strong> This column should contain the date of each transaction. Ensure all dates are in a consistent format, such as YYYY-MM-DD.</li>
+                        <li><strong>Category:</strong> This column should describe the type of transaction (e.g., "Groceries", "Salary", "Utilities").</li>
+                            <li><strong>Withdrawal:</strong> This column should contain amounts withdrawn from your account.</li>
+                            <li><strong>Deposit:</strong> This column should contain amounts deposited into your account.</li>
+                        </ul>
+                </dd>
+                <dt>Check for Missing Data:</dt>
+                <dd>Ensure there are no missing values in the required columns.</dd>
+                <dt>Suggestions:</dt>
+                <dd>
+                    <strong>If your file is not in CSV format:</strong>
+                    <br>
+                    Open your file in a spreadsheet application (like Microsoft Excel or Google Sheets).
+                    Save or export the file as a CSV (Comma Separated Values) file.
+                    <br><br>
+                    <strong>If your file does not contain the exact column names:</strong>
+                    <br>
+                    Use the following prompt in ChatGPT to convert your file into the desired format:
+                    <br>
+                    <em>"I have a file containing transaction details. The columns are not named as 'Date', 'Category', 'Withdrawal', and 'Deposit'. Please provide a step-by-step guide on how to rename my columns to these exact names and ensure the data is correctly formatted for upload to Bachat Buddy."</em>
+                </dd>
+                </dl>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="../static/analysis_form.js"></script>
+</body>
+</html>
