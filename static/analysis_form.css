@@ -335,3 +335,9 @@ button:hover {
     font-weight: 400;
     text-align: left;
 }
+
+#emailid
+{
+    height: 35px;
+    width: 100%;
+}
