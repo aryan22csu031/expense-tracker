@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact-Us</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="logo">
+          <img src="https://i.ibb.co/R7rP4Kf/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="headline">
+          <p>
+            Namaste, Hello, Bonjour, Guten Tag !! <br /><span id="title-text"
+              >BachatBuddy </span
+            ><span class="welcome-effect"></span>
+          </p>
+        </div>
+        <div class="nav-btn">
+          <button id="contact-us">Contact Us</button>
+          <button id="home">Home</button>
+        </div>
+        <div class="account">
+          <img
+            src="https://i.ibb.co/X32WxWw/account.png"
+            alt="profile"
+            id="profile"
+          />
+        </div>
+      </div>
+      <div class="log-nav">
+        <ul>
+          <li><a href="">Login</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </div>
+      <div class="contact-dets">
+        <div class="contact-head">
+          <h1>Contact Us</h1>
+          <img src="https://i.ibb.co/bsHY8SS/image.png" class="contact-img" alt="">
+          <img src="https://i.ibb.co/B61LyJb/image.png" class="contact-img" alt="">
+          <img src="https://i.ibb.co/X3yzNWS/image.png" class="contact-img" alt="">
+        </div>
+        <div class="dets">
+          <div class="contact-one">
+            <div class="contact-name">
+              <h2>Aryan Arora - Frontend & Backend developer</h2> <br>
+              <p>
+                <h5>Linkedin:</h5>
+                <a href="">https://www.linkedin.com/in/aryan-arora-064082208/</a> <br> <br>
+                <h5>Github:</h5>
+                <a href="">https://github.com/aryan22csu031</a> <br> <br>
+                <h5>Email Id:</h5>
+                <a href="">aroraaryan997@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-one">
+            <div class="contact-name">
+              <h2>Anchal Batra - Data Analysis & Backend developer</h2> <br>
+              <p>
+                <h5>Linkedin:</h5>
+                <a href="">https://www.linkedin.com/in/anchal-batra</a> <br> <br>
+                <h5>Github:</h5>
+                <a href="">https://github.com/achlbatra</a> <br> <br>
+                <h5>Email Id:</h5>
+                <a href="">anchalbatra49@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      const logNav = document.querySelector(".log-nav");
+      const profile = document.querySelector(".account");
+      let flag = 0;
+
+      profile.addEventListener("mouseenter", () => {
+        if (flag === 0) {
+          logNav.style.display = "flex";
+          flag = 1;
+        }
+      });
+
+      profile.addEventListener("mouseleave", () => {
+        logNav.style.display = "none";
+        flag = 0;
+      });
+
+      var typed = new Typed(".welcome-effect", {
+        strings: ["Contact Us !!"],
+        typeSpeed: 90,
+        backSpeed: 90,
+        backDelay: 1250,
+        startDelay: 500,
+        cursorChar: "!",
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
