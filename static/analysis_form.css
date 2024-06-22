@@ -341,3 +341,8 @@ button:hover {
     height: 35px;
     width: 100%;
 }
+
+#contact-link-a{
+    text-decoration: none;
+    color: #Faf9f6;
+}
