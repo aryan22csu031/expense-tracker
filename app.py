@@ -7,6 +7,10 @@ UPLOAD_FOLDER = 'expensetracker'
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 @app.route('/')
 def index():
     return render_template('analysis_form.html')
